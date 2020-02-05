@@ -37,14 +37,13 @@ $a->execute(array());
         <div class="dash">
             <!-- /message/ -->
             <?php while ($b = $a->fetch(PDO::FETCH_ASSOC)) {  ?>
-                a <? echo $b['yorum_detay'] ?> <br>
-                <!--a <br> a <br> a <br> a <br> a <br>-->
+                - <? echo $b['yorum_detay'] ?> <br>
             <? } ?>
         </div>
         <form id="form" class="feed-form" action="" method="POST">
             <input type="hidden" name="gelen_url" value="<?php echo 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; ?>">
             <div class="textarea">
-                <textarea class="textarea_box" name="yorum_detay" id="" cols="90" rows="5"></textarea>
+                <textarea class="textarea_box" maxlength="75" name="yorum_detay" id="" cols="90" rows="1"></textarea>
                 <button name="yorumgonder" class="btn" type="submit">submit</button>
             </div>
         </form>

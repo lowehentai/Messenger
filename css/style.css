@@ -7,7 +7,7 @@ h1 {
 }
 
 body {
-    background-color: #161616;
+    background-color: #1d1d1d;
 }
 
 .container {
@@ -36,7 +36,7 @@ body {
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
-    width: 700px;
+    width: 750px;
     min-height: 150px;
     background-color: #474747;
     border-radius: 20px;
@@ -44,7 +44,7 @@ body {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    padding: 20px;
+    padding: 20px 45px 20px 30px;
     box-shadow: 0px 0px 5px #ffffff, inset 0px 0px 10px #ffffff;
 }
 
@@ -65,6 +65,15 @@ body {
     padding: 10px;
     color: #ffffff;
     text-shadow: 0px 0px 5px #ffffff;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.textarea_box:focus {
+    box-shadow: 0px 0px 10px #ffffff, inset 0px 0px 10px #ffffff;
 }
 
 .btn {
@@ -89,6 +98,7 @@ body {
     -ms-transition: 0.3s all;
     -o-transition: 0.3s all;
 }
+
 .btn:hover {
     border: 2px solid #ffffff;
     box-shadow: 0px 0px 10px #ffffff, inset 0px 0px 10px #ffffff;
